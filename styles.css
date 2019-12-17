@@ -1,0 +1,34 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Solway', serif;
+}
+.wrapper{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: rgb(36, 35, 35);
+}
+.board {
+	display: grid;
+	grid-template-columns: repeat(10,25px);
+	grid-template-rows: repeat(20,25px);
+	grid-gap: 5px;
+	width: 300px;
+	height: 600px;
+}
+.square {
+	
+	display: block;
+	width: 25px;
+	height: 25px;
+	transition: .5s;
+	background: rgba(77, 77, 77,.9);
+	box-shadow: 0px 0.1px .6px white;
+	border: 1px solid black;
+
+}
